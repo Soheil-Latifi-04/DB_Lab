@@ -20,7 +20,9 @@ func main() {
 	user := "postgres"
 	password := ""
 	// Name of the database to create
-	databaseName := "newdb"
+	var databaseName string
+	fmt.Print("Enter database name: ")
+	fmt.Scan(&databaseName)
 
 	// Allow only letters, digits and underscores to prevent SQL injection
 	if !regexp.MustCompile(`^[A-Za-z_][A-Za-z0-9_]*$`).MatchString(databaseName) {
