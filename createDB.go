@@ -13,11 +13,12 @@ import (
 )
 
 func main() {
+
 	// Connection settings
 	host := "localhost"
-	port := 8082
+	port := 5432
 	user := "postgres"
-	password := "myPass"
+	password := ""
 	// Name of the database to create
 	databaseName := "newdb"
 
